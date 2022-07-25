@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto-Avance</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="./estilo2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!--Resolución del Punto Menú en donde se trabajan todos sus apartados necesarios-->
+<nav>
+    <a href="#">
+        <img class="logo" src="./imagenes/logo/LOGO NEGRO.png" alt="logo">
+    </a>
+    <ul class="enlaces-menu">
+       <li><a href="./login.html">Cerrar Sesión</a></li>
+    </ul>
+    <button class="ham" type="button">
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+    </button>
+</nav>
+<!--Fin-->
+
+    <header>
+<!--Desde este punto trabajamos el contendio de la página-->
+    <h1 class="title">REGISTRAR COBRO A CLIENTES EVENTUALES</h1>
+    <div class="container">
+        <div class="card">
+            
+            <form action="">
+                <h2 class="Traslado">Seleccione el nombre del cliente a cobrar:</h2>
+                
+                <input list="Nombres">
+                <datalist id="Nombres">
+                    <!--SE NECESITA ADJUNTAR LOS NOMBRES DE LOS CLIENTES REGISTRADOS EN LA BASE DE DATOS-->
+                    <option value="Oscar"></option>
+                    <option value="Pedro"></option>    
+                </datalist>
+                
+                <h2 class="Traslado">Ingrese la fecha:</h2>
+                <input type="date" name="date" id="date">
+
+                <h2 class="Traslado">Seleccione el monto a cobrar segun:</h2>
+                Por hora:<input type="radio" name="radio" id="Mensual">
+                Por dia:<input type="radio" name="radio" id="Semanal">
+                <h2>$<input type="text" name="dinero" id="dinero"></h2>
+
+                <h2 class="Traslado">Seleccione el método de pago:</h2>
+                <input list="pago">
+                <datalist id="pago">
+                    <!--SE NECESITA ADJUNTAR LOS NOMBRES DE LOS CLIENTES REGISTRADOS EN LA BASE DE DATOS-->
+                    <option value="TARJETA DE CREDITO"></option>
+                    <option value="TARJETA DE DEBITO"></option>    
+                    <option value="EFECTIVO"></option>
+                </datalist>
+
+                <h1 class="traslado">GUARDAR</h1>
+                <h1 class="traslado">BORRAR</h1>
+
+                
+                
+            </form>
+        </div>
+        
+        <a href="./inicio.html"><h1 class="traslado">INICIO</h1></a>
+    </header>
+    <!--Parte Baja-->
+    <script src="./main.js"></script>
+</body>
+</html>
